@@ -32,7 +32,7 @@ public class DataLoader implements CommandLineRunner {
         transactionService.save(new TransactionDto(begin.plusDays(10), true, "Petrol", 450.0));
         transactionService.save(new TransactionDto(begin.plusDays(20), false, "Advance", 5000.0));
         transactionService.save(new TransactionDto(begin.plusDays(20), true, "Wine", 700.0));
-        transactionService.save(new TransactionDto(begin.plusDays(25), true, "Shop", 1700.0));
+        transactionService.save(new TransactionDto(begin.plusDays(2), true, "Shop", 1700.0));
 
     }
 }
