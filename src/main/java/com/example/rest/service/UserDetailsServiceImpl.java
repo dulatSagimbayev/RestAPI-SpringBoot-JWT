@@ -16,7 +16,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     private final Map<String, UserDetails> repository = new HashMap<>();
 
     {
-        UserDetails userAdmin = new User("admin","123", Collections.singleton(new SimpleGrantedAuthority("ADMIN0")));
+        UserDetails userAdmin = new User("admin","123", Collections.singleton(new SimpleGrantedAuthority("ADMIN")));
         UserDetails userSimple = new User("user","password",Collections.singleton(new SimpleGrantedAuthority("USER")));
         repository.put(userAdmin.getUsername(),userAdmin);
         repository.put(userSimple.getUsername(),userSimple);

@@ -22,7 +22,7 @@ public class JwtTokenUtil {
         Claims claims = getAllClaimsFromToken(token);
         return claimsResolver.apply(claims);
     }
-    private String getUsernameFromToken(String token){return getClaimFromToken(token,Claims::getSubject);}
+    public String getUsernameFromToken(String token){return getClaimFromToken(token,Claims::getSubject);}
 
     private Date getExpirationDateFromToken(String token){return getClaimFromToken(token,Claims::getExpiration);}
 
